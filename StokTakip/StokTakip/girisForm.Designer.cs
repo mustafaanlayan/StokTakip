@@ -99,6 +99,7 @@ namespace StokTakip
             this.btnGiris.Size = new System.Drawing.Size(75, 23);
             this.btnGiris.TabIndex = 5;
             this.btnGiris.Text = "GİRİŞ";
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // txtParola
             // 
@@ -114,7 +115,7 @@ namespace StokTakip
             this.txtKullaniciAdi.Size = new System.Drawing.Size(167, 20);
             this.txtKullaniciAdi.TabIndex = 2;
             // 
-            // Form1
+            // girisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -127,7 +128,7 @@ namespace StokTakip
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "girisForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GİRİŞ FORMU";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();

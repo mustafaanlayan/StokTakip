@@ -120,6 +120,7 @@ namespace StokTakip.Clasess
                 {
                     cmd.Parameters.Add(prmListSqlPar[i]);
                 }
+
                 ret = cmd.ExecuteScalar();
                 cmd.Dispose();
                 cmd = null;
@@ -134,6 +135,61 @@ namespace StokTakip.Clasess
             {
                 GC.Collect();
             }
+            return ret;
+        }
+        //-------------------------
+        public DataTable RetStoredProcDataTable(string prmStoredProcName, List<SqlParameter> prmListSqlPar)
+        {
+            DataTable ret = new DataTable();
+
+            try
+            {
+                if (sqlConn.State != ConnectionState.Open)
+                    sqlConn.Open();
+
+                SqlCommand cmd = new SqlCommand(prmStoredProcName, sqlConn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                for (int i = 0; i < prmListSqlPar.Count; i++)
+                {
+                    cmd.Parameters.Add(prmListSqlPar[i]);
+                }
+
+                SqlDataAdapter da = new SqlDataAdapter();
+                da.SelectCommand = cmd;
+                da.Fill(ret);
+                da.Dispose();
+                cmd.Dispose();
+            }
+            catch (Exception)
+            {
+                ret = null;
+            }
+            finally
+            {
+                GC.Collect();
+            }
+
+            return ret;
+
+        }
+        public object GetValue(string prmQuery, string prmColumn)
+        {
+            object ret = null;
+
+            try
+            {
+                DataTable dt = this.GetQuery(prmQuery);
+                if (dt.Rows.Count>0)
+                    ret = dt.Rows[0][prmColumn];
+                dt.Rows.Clear();
+                dt.Dispose();
+
+                
+            }
+            catch //(Exception e)
+            {
+            }
+            GC.Collect();
             return ret;
         }
         #endregion

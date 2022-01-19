@@ -62,6 +62,13 @@
     <Compile Include="girisForm.Designer.cs">
       <DependentUpon>girisForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kullanici.cs" />
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="girisForm.resx">

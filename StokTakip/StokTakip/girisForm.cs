@@ -16,5 +16,19 @@ namespace StokTakip
         {
             InitializeComponent();
         }
+
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            Kullanici k = new Kullanici();
+
+            if (k.KayitAc(txtKullaniciAdi.Text,txtParola.Text))
+            {
+                mainForm f = new mainForm();
+                this.Hide();
+                f.ShowDialog();
+                this.Close();
+            }
+            else MessageBox.Show("Kullanıcı Bulunamadı");
+        }
     }
 }

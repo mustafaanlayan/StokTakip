@@ -1,0 +1,2 @@
+# StokTakip
+Stok_Programı

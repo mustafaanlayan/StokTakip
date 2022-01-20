@@ -24,7 +24,7 @@ namespace StokTakip.Clasess
                 sqlConn.ConnectionString = ConfigurationManager.ConnectionStrings["DB"].ConnectionString;
                 sqlConn.Open();
             }
-            catch //(Exception)
+            catch (Exception e)
             {
 
                
@@ -45,7 +45,7 @@ namespace StokTakip.Clasess
                     sqlConn = null;
                 }
             }
-            catch //(Exception)
+            catch (Exception e )
             {
 
                 
@@ -68,7 +68,7 @@ namespace StokTakip.Clasess
                     sqlConn = null;
                 }
             }
-            catch //(Exception)
+            catch (Exception e)
             {
 
             }
@@ -92,7 +92,7 @@ namespace StokTakip.Clasess
                 sqlDataAdap.Dispose();
                 sqlDataAdap = null;
             }
-            catch //(Exception)
+            catch (Exception e)
             {
 
                 ret = null;
@@ -126,7 +126,7 @@ namespace StokTakip.Clasess
                 cmd = null;
 
             }
-            catch //(Exception)
+            catch (Exception e)
             {
 
                 ret = null;
@@ -160,7 +160,7 @@ namespace StokTakip.Clasess
                 da.Dispose();
                 cmd.Dispose();
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 ret = null;
             }

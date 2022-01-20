@@ -30,5 +30,10 @@ namespace StokTakip
             }
             else MessageBox.Show("Kullanıcı Bulunamadı");
         }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

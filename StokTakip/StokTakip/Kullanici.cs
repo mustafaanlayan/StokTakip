@@ -37,13 +37,13 @@ namespace StokTakip
                 sqlParList.Add(new SqlParameter("@KullAd",prmKullaniciAdi));
                 sqlParList.Add(new SqlParameter("@Parola",prmParola));
 
-                DataTable dt = con.RetStoredProcDataTable("spKullBul", sqlParList);
+                DataTable dt = con.RetStoredProcDataTable("sp_KullBul", sqlParList);
 
-                if (dt.Rows.Count>0)
+                if (dt.Rows.Count > 0)
                 {
                     ret = true;
                     this.ID = Convert.ToInt32(dt.Rows[0]["ID"]);
-                    this.IsSilindi = Convert.ToBoolean(dt.Rows[0]["IsSlindi"]);
+                    this.IsSilindi = Convert.ToBoolean(dt.Rows[0]["IsSilindi"]);
                     this.KullaniciAdi = dt.Rows[0]["KullaniciAdi"].ToString();
                     this.Parola = dt.Rows[0]["Parola"].ToString();
                 }
@@ -53,7 +53,7 @@ namespace StokTakip
                 dt = null;
                 con.Close();
             }
-            catch //(Exception e)
+            catch (Exception e)
             {
                 ret = false;
             }

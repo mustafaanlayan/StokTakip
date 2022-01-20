@@ -86,8 +86,9 @@ namespace StokTakip
             this.btnCikis.Location = new System.Drawing.Point(160, 161);
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.Size = new System.Drawing.Size(75, 23);
-            this.btnCikis.TabIndex = 6;
+            this.btnCikis.TabIndex = 3;
             this.btnCikis.Text = "ÇIKIŞ";
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
             // btnGiris
             // 
@@ -97,7 +98,7 @@ namespace StokTakip
             this.btnGiris.Location = new System.Drawing.Point(160, 129);
             this.btnGiris.Name = "btnGiris";
             this.btnGiris.Size = new System.Drawing.Size(75, 23);
-            this.btnGiris.TabIndex = 5;
+            this.btnGiris.TabIndex = 2;
             this.btnGiris.Text = "GİRİŞ";
             this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
@@ -106,14 +107,14 @@ namespace StokTakip
             this.txtParola.Location = new System.Drawing.Point(121, 99);
             this.txtParola.Name = "txtParola";
             this.txtParola.Size = new System.Drawing.Size(167, 20);
-            this.txtParola.TabIndex = 3;
+            this.txtParola.TabIndex = 1;
             // 
             // txtKullaniciAdi
             // 
             this.txtKullaniciAdi.Location = new System.Drawing.Point(121, 70);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(167, 20);
-            this.txtKullaniciAdi.TabIndex = 2;
+            this.txtKullaniciAdi.TabIndex = 0;
             // 
             // girisForm
             // 

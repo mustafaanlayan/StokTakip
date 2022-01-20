@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StokTakip.Clasess;
 
 namespace StokTakip
 {
@@ -28,7 +29,7 @@ namespace StokTakip
                 f.ShowDialog();
                 this.Close();
             }
-            else MessageBox.Show("Kullanıcı Bulunamadı");
+            else Helpers.Uyar("Kullanıcı Bulunamadı");
         }
 
         private void btnCikis_Click(object sender, EventArgs e)

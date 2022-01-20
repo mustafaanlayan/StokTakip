@@ -39,6 +39,9 @@
     <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -56,11 +59,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clasess\DbConnection.cs" />
+    <Compile Include="Clasess\Helpers.cs" />
     <Compile Include="girisForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="girisForm.Designer.cs">
       <DependentUpon>girisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobListeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobListeForm.Designer.cs">
+      <DependentUpon>GlobListeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Kullanici.cs" />
     <Compile Include="mainForm.cs">
@@ -73,6 +83,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="girisForm.resx">
       <DependentUpon>girisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobListeForm.resx">
+      <DependentUpon>GlobListeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -103,6 +116,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exporttoxls_32x32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

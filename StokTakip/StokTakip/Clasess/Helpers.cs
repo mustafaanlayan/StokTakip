@@ -17,6 +17,11 @@ namespace StokTakip.Clasess
             XtraMessageBox.Show(prmUyar, "Uyar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
+        public static void Hata(string prmUyar)
+        {
+            XtraMessageBox.Show(prmUyar, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
         public static void ExcelAktar(string prmIsim, GridControl prmGc)
         {
             SaveFileDialog sfd = new SaveFileDialog();

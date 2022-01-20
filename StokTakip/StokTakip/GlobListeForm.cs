@@ -40,5 +40,10 @@ namespace StokTakip
         {
             Helpers.ExcelAktar(this.Name,gridControl1);
         }
+
+        private void GlobListeForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

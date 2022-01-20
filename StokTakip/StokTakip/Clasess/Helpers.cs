@@ -22,7 +22,7 @@ namespace StokTakip.Clasess
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.FileName = prmIsim;
 
-            if (Equals(sfd.ShowDialog()==DialogResult.OK))
+            if (sfd.ShowDialog()==DialogResult.OK)
             {
                 prmGc.ExportToXlsx(sfd.FileName);
 

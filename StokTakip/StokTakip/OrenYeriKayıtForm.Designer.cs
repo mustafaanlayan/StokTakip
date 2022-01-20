@@ -1,7 +1,7 @@
 ﻿
 namespace StokTakip
 {
-    partial class GlobKayitForm
+    partial class OrenYeriKayıtForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,9 +29,7 @@ namespace StokTakip
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.btnVazgeç = new DevExpress.XtraEditors.SimpleButton();
-            this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrenYeriKayıtForm));
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.SuspendLayout();
@@ -42,48 +40,29 @@ namespace StokTakip
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
             this.groupControl1.AppearanceCaption.Options.UseTextOptions = true;
             this.groupControl1.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.groupControl1.Controls.Add(this.btnVazgeç);
-            this.groupControl1.Controls.Add(this.btnKaydet);
-            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(800, 390);
-            this.groupControl1.TabIndex = 0;
-            this.groupControl1.Text = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(800, 450);
+            this.groupControl1.Text = "Ören Yeri Kayıt ";
             // 
             // btnVazgeç
             // 
             this.btnVazgeç.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnVazgeç.Appearance.Options.UseFont = true;
-            this.btnVazgeç.ImageOptions.Image = global::StokTakip.Properties.Resources.cancel_32x321;
-            this.btnVazgeç.Location = new System.Drawing.Point(101, 3);
-            this.btnVazgeç.Name = "btnVazgeç";
-            this.btnVazgeç.Size = new System.Drawing.Size(90, 32);
-            this.btnVazgeç.TabIndex = 1;
-            this.btnVazgeç.Text = "Vazgeç";
-            this.btnVazgeç.Click += new System.EventHandler(this.btnVazgeç_Click);
+            this.btnVazgeç.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnVazgeç.ImageOptions.Image")));
             // 
             // btnKaydet
             // 
             this.btnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKaydet.Appearance.Options.UseFont = true;
-            this.btnKaydet.ImageOptions.Image = global::StokTakip.Properties.Resources.save_32x32;
-            this.btnKaydet.Location = new System.Drawing.Point(5, 3);
-            this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(90, 32);
-            this.btnKaydet.TabIndex = 0;
-            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.ImageOptions.Image")));
             // 
-            // GlobKayitForm
+            // OrenYeriKayıtForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 390);
-            this.Controls.Add(this.groupControl1);
-            this.KeyPreview = true;
-            this.Name = "GlobKayitForm";
-            this.Text = "GlobKayitForm";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GlobKayitForm_KeyDown);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "OrenYeriKayıtForm";
+            this.Text = "Ören Yeri Kayıt Formu";
+            this.Load += new System.EventHandler(this.OrenYeriKayıtForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -91,9 +70,5 @@ namespace StokTakip
         }
 
         #endregion
-
-        public DevExpress.XtraEditors.GroupControl groupControl1;
-        public DevExpress.XtraEditors.SimpleButton btnVazgeç;
-        public DevExpress.XtraEditors.SimpleButton btnKaydet;
     }
 }

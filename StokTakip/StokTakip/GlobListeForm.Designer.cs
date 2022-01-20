@@ -131,6 +131,7 @@ namespace StokTakip
             this.Controls.Add(this.groupControl1);
             this.Name = "GlobListeForm";
             this.Text = "GlobListeForm";
+            this.Load += new System.EventHandler(this.GlobListeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -140,14 +141,13 @@ namespace StokTakip
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.SimpleButton btnEkle;
-        private DevExpress.XtraEditors.SimpleButton btnDuzelt;
-        private DevExpress.XtraEditors.SimpleButton btnSil;
-        private DevExpress.XtraEditors.SimpleButton btnYenile;
-        private DevExpress.XtraEditors.SimpleButton btnExcell;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        public DevExpress.XtraEditors.GroupControl groupControl1;
+        public DevExpress.XtraGrid.GridControl gridControl1;
+        public DevExpress.XtraEditors.SimpleButton btnEkle;
+        public DevExpress.XtraEditors.SimpleButton btnDuzelt;
+        public DevExpress.XtraEditors.SimpleButton btnSil;
+        public DevExpress.XtraEditors.SimpleButton btnYenile;
+        public DevExpress.XtraEditors.SimpleButton btnExcell;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }

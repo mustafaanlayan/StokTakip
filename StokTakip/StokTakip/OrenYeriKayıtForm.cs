@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace StokTakip
 {
-    public partial class mainForm : Form
+    public partial class OrenYeriKayıtForm : GlobKayitForm
     {
-        public mainForm()
+        public OrenYeriKayıtForm()
         {
             InitializeComponent();
         }
 
-        private void bbOrenYeriListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void OrenYeriKayıtForm_Load(object sender, EventArgs e)
         {
-            OrenYeriListesiForm f = new OrenYeriListesiForm();
-            f.IsMdiContainer = true;
-            f.ShowDialog();
+
         }
     }
 }

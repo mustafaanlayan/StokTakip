@@ -66,6 +66,12 @@
     <Compile Include="girisForm.Designer.cs">
       <DependentUpon>girisForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobKayitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobKayitForm.Designer.cs">
+      <DependentUpon>GlobKayitForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlobListeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="girisForm.resx">
       <DependentUpon>girisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobKayitForm.resx">
+      <DependentUpon>GlobKayitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GlobListeForm.resx">
       <DependentUpon>GlobListeForm.cs</DependentUpon>
@@ -131,6 +140,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\exporttoxls_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32x321.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
